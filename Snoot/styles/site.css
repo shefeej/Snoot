@@ -1,0 +1,46 @@
+.banner{
+  background-image: url("../images/banner.jpg");
+  font-family: "Chalkduster", fantasy;
+  padding: 200px;
+  margin: 0;
+}
+
+.banner h1{
+  font-size: 400%;
+  align-items: center;
+}
+
+.banner .bannerimg{
+  height: 50%;
+  opacity: 80%;
+}
+
+nav{
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  font-family: "Gill Sans", fantasy;
+  font-variant: small-caps;
+  font-size: 110%;
+  position: fixed;
+  background: #FFFF;
+}
+
+nav ul{
+  text-align: center;
+  padding: 0;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 4px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  padding: 20px;
+}
+
+nav a:hover{
+  background-color: #78a6dc;
+}
