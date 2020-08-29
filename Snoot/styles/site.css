@@ -18,6 +18,10 @@ body {
   align-items: center;
 }
 
+.banner p{
+  font-size: 60%;
+}
+
 .banner .bannerimg{
   height: 50%;
   opacity: 80%;
