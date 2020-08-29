@@ -116,7 +116,7 @@ h2 {
 }
 
 /* guide main content */
-.offset{
+.offset {
   padding-top: 150px;
 }
 
@@ -134,7 +134,7 @@ h2 {
   width: 50%;
   border-radius: 20px;
   height: 410px;
-  margin: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
 
 }
 
@@ -144,44 +144,7 @@ h2 {
 .boxes h3 {
   font-size: 30px;
   color: black;
-  padding: 20px;
+  padding-left: 20px;
 }
 
 /*shelter page styling*/
-.shelter {
-  background-color: #ffffff;
-  width: 50%;
-  border-radius: 20px;
-  height: 510px;
-  margin: 10px 10px 10px 10px;
-
-}
-
-.shelter img{
-  width: 100%;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  height: 320px;
-  /* object-fit: none; */
-  background-size: contain;
-}
-.shelter h2{
-  font-size: 50px;
-}
-.shelter h3 {
-  font-size: 30px;
-  color: black;
-  padding-left: 20px;
-}
-
-.sheloffset{
-  padding-top: 150px;
-}
-
-.shelter p{
-  color: gray;
-  padding-left: 20px;
-}
-
-.iframe {
-}
