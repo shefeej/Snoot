@@ -82,7 +82,7 @@ nav a:hover{
 
 /* homepage main content */
 main {
-  margin: 40px 64px 40px 64px;
+  padding: 40px 64px 40px 64px;
 }
 
 h2 {
