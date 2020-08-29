@@ -161,9 +161,7 @@ h2 {
   width: 100%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  height: 320px;
-  /* object-fit: none; */
-  background-size: contain;
+  max-height: 340px;
 }
 .shelter h2{
   font-size: 50px;
@@ -181,7 +179,4 @@ h2 {
 .shelter p{
   color: gray;
   padding-left: 20px;
-}
-
-.iframe {
 }
