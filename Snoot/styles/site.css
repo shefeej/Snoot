@@ -29,6 +29,7 @@ nav {
   position: fixed;
   background-color: #ffffff;
   z-index: 2;
+  filter: drop-shadow(0px 5px 4px gray)
 }
 
 nav ul {
@@ -61,14 +62,21 @@ nav img {
 /* dropdown hover: display more */
 #dropdown:hover li {
   display: block;
+  color: black;
 }
 
 #dropdown ul {
   position: fixed;
+  background-color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
 }
 
 #dropdown ul li {
   text-align: left;
+  padding-top: 10px;
+  padding-left: 0px;
 }
 
 nav ul li a {
@@ -82,7 +90,7 @@ nav a:hover{
 
 /* homepage main content */
 main {
-  margin: 40px 64px 40px 64px;
+  padding: 40px 64px 40px 64px;
 }
 
 h2 {
@@ -91,7 +99,7 @@ h2 {
 
 .row {
   display: flex;
-  flex-direction: horizontal;
+  flex-direction: row;
 }
 
 .rowitem {
@@ -111,4 +119,76 @@ h2 {
 .citation {
   margin-left: 14px;
   font-size: 12px !important;
+}
+
+/* guide main content */
+.offset {
+  padding-top: 150px;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+.boxes img{
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 320px;
+  /* object-fit: none; */
+  background-size: contain;
+}
+
+.boxes {
+  background-color: #ffffff;
+  width: 50%;
+  border-radius: 20px;
+  height: 410px;
+  margin: 10px 10px 10px 10px;
+
+}
+
+.boxes h2{
+  font-size: 50px;
+}
+.boxes h3 {
+  font-size: 30px;
+  color: black;
+  padding-left: 20px;
+}
+
+/*shelter page styling*/
+.shelter {
+  background-color: #ffffff;
+  width: 50%;
+  border-radius: 20px;
+  height: 510px;
+  margin: 10px 10px 10px 10px;
+
+}
+
+.shelter img{
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  max-height: 340px;
+}
+
+.shelter h2{
+  font-size: 50px;
+}
+
+.shelter h3 {
+  font-size: 30px;
+  color: black;
+  padding-left: 20px;
+}
+
+.shelter p{
+  color: gray;
+  padding-left: 20px;
+}
+
+#shelter-map {
+  margin: 10px;
 }

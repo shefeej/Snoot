@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Find a Shelter</title>
+    <link rel="stylesheet" href="styles/site.css">
   </head>
   <body>
+    
+    <nav>
+      <a href="index.html"><img src="images/logo.svg" alt="Snoot Logo" /></a>
+      <ul id="main-nav">
+        <li><a href="shelter.html">Find a Shelter</a></li>
+        <li><a href="call.html">Call a Pet</a></li>
+        <li id="dropdown"><a href="guide.html">Pet Guides</a>
+          <ul>
+            <li>Dogs</li>
+            <li>Cats</li>
+            <li>Birds</li>
+            <li>Guinea Pigs</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main class ="offset">
+      <section id="shelters">
+        <div class="pageheader">
+          <h1>Find a Shelter</h1>
+        </div>
+      </section>
+      <div class="row">
+        <section class="shelter">
+          <div>
+            <img src="images/shelter.jpeg" alt = "SPCA Shelter">
+            <h3>SPCA of Tompkins County</h3>
+            <p>1640 Hanshaw Rd, Ithaca, NY 14850</p>
+            <p>(607) 257-1822</p>
+          </div>
+        </section>
+        <section class ="shelter">
+          <div>
+            <img src="images/shelter.jpeg" alt = "SPCA Shelter">
+            <h3>Cortland Community SPCA</h3>
+            <p>879 McLean Rd, Cortland, NY 13045</p>
+            <p>(607) 753-9386</p>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <section class="shelter">
+          <div>
+            <img src="images/shelter.jpeg" alt = "SPCA Shelter">
+            <h3>Pet To Pet</h3>
+            <p>6371 Strong Rd, Trumansburg, NY</p>
+            <p>(607) 257-1822</p>
+          </div>
+        </section>
+        <section class="shelter">
+          <div>
+            <img src="images/shelter.jpeg" alt = "SPCA Shelter">
+            <h3>Schuyler County Dog Shelter</h3>
+            <p>124 Marina Dr, Montour Falls, NY 14865</p>
+            <p>(607) 594-2255</p>
+          </div>
+        </section>
+      </div>
+
+      <div id="shelter-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d188440.31135601958!2d-76.63109256214666!3d42.440933134722854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sanimal%20shelter!5e0!3m2!1sen!2sus!4v1598552878432!5m2!1sen!2sus" 
+        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </main>
 
   </body>
 </html>
