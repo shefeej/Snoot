@@ -115,5 +115,28 @@ h2 {
 
 /* guide main content */
 .offset {
-  padding-top: 150px
+  padding-top: 150px;
 }
+
+.boxes img{
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 320px;
+}
+
+.boxes {
+  background-color: #ffffff;
+  width: 50%;
+  border-radius: 20px;
+  height: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.boxes h3 {
+  font-size: 25px;
+  color: black;
+  
+}
+
