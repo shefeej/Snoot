@@ -28,9 +28,9 @@
   <main class="offset">
     <h2>Schedule a Call</h2>
     <div class="call-text">Use the calendar below to schedule a virtual appointment with a shelter to meet the pets
-    </div><br>
+    </div>
     <div id="cal-box">
-      <p id="button-box">
+      <div id="button-box">
       <form id="req-text" action="/action_page.php">
         Email: <input type="text" name="name"><br>
         Shelter: <input type="text" name="shelter"><br>
@@ -41,7 +41,7 @@
       <!--Add buttons to initiate auth sequence and sign out-->
       <button class="cal-button" id="authorize_button" style="display: none;">Authorize</button>
       <button class="cal-button" id="signout_button" style="display: none;">Sign Out</button>
-      </p>
+    </div>
       <pre id="content" style="white-space: pre-wrap;"></pre>
 
       <script src="scripts/scripts.js"></script>
@@ -51,7 +51,7 @@
         </script>
       <iframe
         src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=cmcwNmo2YzJ0dGlwdHF2Yzg3a2FsMDNvc2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F09300&amp;title=Snoot%20Scheduler&amp;showTabs=0&amp;showPrint=0"
-        style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        style="border-width:0" width="800" height="600" ></iframe>
     </div>
   </main>
 </body>
