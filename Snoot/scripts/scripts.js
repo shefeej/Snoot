@@ -156,36 +156,3 @@ function calRequest() {
     appendPre('Event created: ' + event.htmlLink);
   });
 }
-
-/* function execute() {
-  var e = document.getElementById("req-text");
-  var pname = e.elements[0].value;
-  var shelter = e.elements[1].value;
-  var stime = e.elements[2].value;
-
-  var dt = new Date(stime);
-  dt.setHours(dt.getHours() + 1);
-  var endt = dt.toISOString();
-  return gapi.client.calendar.events.insert({
-    "calendarId": "primary",
-    "sendNotifications": true,
-    "resource": {
-      "end": {
-        "dateTime": endt,
-        "timeZone": "America/New_York"
-      },
-      "start": {
-        "dateTime": stime,
-        "timeZone": "America/New_York"
-      }
-    }
-  })
-    .then(function (response) {
-      // Handle the results here (response.result has the parsed body).
-      console.log("Response", response);
-    },
-      function (err) { console.error("Execute error", err); });
-}
-gapi.load("client:auth2", function () {
-  gapi.auth2.init({ client_id: CLIENT_ID });
-}); */
