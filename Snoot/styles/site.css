@@ -66,6 +66,7 @@ nav img {
 
 #dropdown ul {
   position: fixed;
+  background-color: #ffffff;
 }
 
 #dropdown ul li {
@@ -124,20 +125,25 @@ h2 {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   height: 320px;
+  /* object-fit: none; */
+  background-size: contain;
 }
 
 .boxes {
   background-color: #ffffff;
   width: 50%;
   border-radius: 20px;
-  height: 400px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  height: 410px;
+  margin: 10px 10px 10px 10px;
+  
 }
 
+.boxes h2{
+  font-size: 50px;
+}
 .boxes h3 {
-  font-size: 25px;
+  font-size: 30px;
   color: black;
-  
+  padding-left: 20px;
 }
 
