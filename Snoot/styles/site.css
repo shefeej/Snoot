@@ -66,6 +66,7 @@ nav img {
 
 #dropdown ul {
   position: fixed;
+  background-color: #ffffff;
 }
 
 #dropdown ul li {
