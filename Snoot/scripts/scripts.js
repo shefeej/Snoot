@@ -114,3 +114,78 @@ function listUpcomingEvents() {
     }
   });
 }
+
+function calRequest() {
+  var e = document.getElementById("req-text");
+  var pname = e.elements[0].value;
+  var shelter = e.elements[1].value;
+  var stime = e.elements[2].value;
+
+  var dt = new Date(stime);
+  dt.setHours(dt.getHours() + 1);
+  var endt = dt.toISOString();
+
+  var event = {
+    'summary': string.concat(pname, ' @ ', shelter),
+    'start': {
+      'dateTime': stime,
+      'timeZone': 'America/New_York'
+    },
+    'end': {
+      'dateTime': endt,
+      'timeZone': 'America/New_York'
+    },
+    'attendees': {
+      'email': pname,
+      'email': 'shefeecat42@gmail.com'
+    },
+    'reminders': {
+      'useDefault': false,
+      'overrides': [
+        { 'method': 'email', 'minutes': 24 * 60 },
+        { 'method': 'popup', 'minutes': 10 }
+      ]
+    }
+  }
+  var request = gapi.client.calendar.events.insert({
+    'calendarId': 'rg06j6c2ttiptqvc87kal03osc@group.calendar.google.com',
+    'resource': event
+  });
+
+  request.execute(function (event) {
+    appendPre('Event created: ' + event.htmlLink);
+  });
+}
+
+/* function execute() {
+  var e = document.getElementById("req-text");
+  var pname = e.elements[0].value;
+  var shelter = e.elements[1].value;
+  var stime = e.elements[2].value;
+
+  var dt = new Date(stime);
+  dt.setHours(dt.getHours() + 1);
+  var endt = dt.toISOString();
+  return gapi.client.calendar.events.insert({
+    "calendarId": "primary",
+    "sendNotifications": true,
+    "resource": {
+      "end": {
+        "dateTime": endt,
+        "timeZone": "America/New_York"
+      },
+      "start": {
+        "dateTime": stime,
+        "timeZone": "America/New_York"
+      }
+    }
+  })
+    .then(function (response) {
+      // Handle the results here (response.result has the parsed body).
+      console.log("Response", response);
+    },
+      function (err) { console.error("Execute error", err); });
+}
+gapi.load("client:auth2", function () {
+  gapi.auth2.init({ client_id: CLIENT_ID });
+}); */

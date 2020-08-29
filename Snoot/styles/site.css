@@ -180,3 +180,36 @@ h2 {
   color: gray;
   padding-left: 20px;
 }
+
+/*call page styles*/
+
+.cal-button {
+  background-color: #ffffff;
+  color: #78a6dc;
+  border: none;
+  font-size: 20px;
+}
+
+#cal-box {
+  display: table;
+  margin: 0 auto;
+}
+
+.call-text {
+  font-family: sans-serif;
+  position: absolute;
+  width: 1312px;
+  height: 98px;
+  left: 64px;
+  top: 227px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 49px;
+  color: #FFFFFF;
+}
+
+#button-box {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+}
