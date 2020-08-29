@@ -29,6 +29,7 @@ nav {
   position: fixed;
   background-color: #ffffff;
   z-index: 2;
+  filter: drop-shadow(0px 5px 4px gray)
 }
 
 nav ul {
@@ -67,10 +68,15 @@ nav img {
 #dropdown ul {
   position: fixed;
   background-color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
 }
 
 #dropdown ul li {
   text-align: left;
+  padding-top: 10px;
+  padding-left: 0px;
 }
 
 nav ul li a {
@@ -120,6 +126,10 @@ h2 {
   padding-top: 150px;
 }
 
+h1 {
+  font-size: 52px;
+}
+
 .boxes img{
   width: 100%;
   border-top-right-radius: 20px;
@@ -163,17 +173,15 @@ h2 {
   border-top-left-radius: 20px;
   max-height: 340px;
 }
+
 .shelter h2{
   font-size: 50px;
 }
+
 .shelter h3 {
   font-size: 30px;
   color: black;
   padding-left: 20px;
-}
-
-.sheloffset{
-  padding-top: 150px;
 }
 
 .shelter p{
@@ -212,4 +220,7 @@ h2 {
   display: table;
   margin: 0 auto;
   text-align: center;
+}
+#shelter-map {
+  margin: 10px;
 }
