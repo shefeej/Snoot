@@ -119,16 +119,18 @@ function calRequest() {
   var e = document.getElementById("req-text");
   var pname = e.elements[0].value;
   var shelter = e.elements[1].value;
-  var stime = e.elements[2].value;
+  var sdate = e.elements[2].value;
+  var stime = e.elements[3].value;
 
-  var dt = new Date(stime);
+  var dt = new Date(sdate, stime);
   dt.setHours(dt.getHours() + 1);
   var endt = dt.toISOString();
 
   var event = {
     'summary': string.concat(pname, ' @ ', shelter),
     'start': {
-      'dateTime': stime,
+      'date': sdate,
+      'time': stime,
       'timeZone': 'America/New_York'
     },
     'end': {
