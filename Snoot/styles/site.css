@@ -61,10 +61,12 @@ nav img {
 /* dropdown hover: display more */
 #dropdown:hover li {
   display: block;
+  color: black;
 }
 
 #dropdown ul {
   position: fixed;
+  background-color: #ffffff;
 }
 
 #dropdown ul li {
