@@ -112,3 +112,8 @@ h2 {
   margin-left: 14px;
   font-size: 12px !important;
 }
+
+/* guide main content */
+.offset {
+  padding-top: 150px
+}
