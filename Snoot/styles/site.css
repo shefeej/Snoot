@@ -61,6 +61,7 @@ nav img {
 /* dropdown hover: display more */
 #dropdown:hover li {
   display: block;
+  color: black;
 }
 
 #dropdown ul {
