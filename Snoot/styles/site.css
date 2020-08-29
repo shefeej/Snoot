@@ -199,21 +199,11 @@ h1 {
 }
 
 #cal-box {
-  display: table;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .call-text {
-  font-family: sans-serif;
-  position: absolute;
-  width: 1312px;
-  height: 98px;
-  left: 64px;
-  top: 227px;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 49px;
-  color: #FFFFFF;
+  font-size: 36px;
 }
 
 #button-box {
@@ -221,6 +211,29 @@ h1 {
   margin: 0 auto;
   text-align: center;
 }
+
 #shelter-map {
   margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+input {
+  width: 50%;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
 }

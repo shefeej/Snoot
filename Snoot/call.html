@@ -31,12 +31,34 @@
     </div><br>
     <div id="cal-box">
       <p id="button-box">
-      <form id="req-text" action="/action_page.php">
-        Email: <input type="text" name="name"><br>
-        Shelter: <input type="text" name="shelter"><br>
-        Date & Time: <input type="text" name="time"><br><br>
-        <input type="button" class="cal-button" onclick="calRequest()" value="Request a Timeslot">
-        <!-- <button onclick="execute()">execute</button> -->
+      <form id="req-text">
+        <div class="column">
+          <div class="question">
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="question">
+            <label for="shelter">Shelter: </label>
+            <input type="text" name="shelter" id="shelter" />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="question">
+            <label for="date">Date: </label>
+            <input type="date" name="date" id="date" />
+          </div>
+          
+          <div class="question">
+            <label for="time">Time: </label>
+            <input type="time" name="time" id="time" />
+          </div>
+
+          <div class="question">
+            <input type="button" class="cal-button" onclick="calRequest()" value="Request a Timeslot">
+            <!-- <button onclick="execute()">execute</button> -->
+          </div>
+        </div>
       </form>
       <!--Add buttons to initiate auth sequence and sign out-->
       <button class="cal-button" id="authorize_button" style="display: none;">Authorize</button>
@@ -51,7 +73,7 @@
         </script>
       <iframe
         src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=cmcwNmo2YzJ0dGlwdHF2Yzg3a2FsMDNvc2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F09300&amp;title=Snoot%20Scheduler&amp;showTabs=0&amp;showPrint=0"
-        style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
   </main>
 </body>
